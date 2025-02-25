@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Hôtel Palm Camayenne</title>
+    <meta name="description" content="Contactez l'hôtel Palm Camayenne pour toute information ou réservation.">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .contact-page {
+            padding-top: 120px;
+            background: var(--light-bg);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .contact-info {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-item {
+            margin-bottom: 2rem;
+        }
+
+        .contact-item h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .contact-item p {
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .social-links a:hover {
+            transform: translateY(-2px);
+        }
+
+        .social-icon {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+        }
+
+        .map-container {
+            margin-top: 3rem;
+            border-radius: 8px;
+            overflow: hidden;
+            height: 400px;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="navBar">
+        <div class="topNav">
+            <div class="logo">
+                <a href="index.html">Hôtel <span>Palm Camayenne</span></a>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="navItems">
+                <a href="./Notre_hôtel.html">Accueil</a>
+                <a href="./Notre_hôtel.html#chambres">Chambres</a>
+                <a href="./Notre_hôtel.html#services">Services</a>
+                <a href="./Notre_hôtel.html#galerie">Galerie</a>
+                <a href="./Notre_hôtel.html#avis">Avis</a>
+                <a href="#" class="active">Contact</a>
+                <a href="./Notre_hôtel.html#reservation" class="btn">Réserver</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contact-page">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="fade-up">Contactez-nous</h1>
+                <p class="fade-up">Notre équipe est à votre disposition pour répondre à toutes vos questions</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info fade-up">
+                    <div class="contact-item">
+                        <h3>Adresse</h3>
+                        <p>Hôtel Palm Camayenne</p>
+                        <p>BP 4346, Conakry</p>
+                        <p>République de Guinée</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>Contact Direct</h3>
+                        <p>Téléphone : +224 621 00 00 00</p>
+                        <p>Réservations : +224 621 00 00 01</p>
+                        <p>Email : contact@palmcamayenne.com</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>Horaires</h3>
+                        <p>Réception : 24h/24, 7j/7</p>
+                        <p>Restaurant : 6h30 - 23h00</p>
+                        <p>Spa : 8h00 - 21h00</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>Suivez-nous</h3>
+                        <div class="social-links">
+                            <a href="#" target="_blank">
+                                <img src="images/incone/face.png" alt="Facebook" class="social-icon"> Facebook
+                            </a>
+                            <a href="#" target="_blank">
+                                <img src="images/incone/insta.jpg" alt="Instagram" class="social-icon"> Instagram
+                            </a>
+                            <a href="#" target="_blank">
+                                <img src="images/incone/tw.jpg" alt="Twitter" class="social-icon"> Twitter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form fade-up">
+                    <h3>Envoyez-nous un message</h3>
+                    <form id="contact-form" onsubmit="return submitContactForm(event)">
+                        <div class="form-group">
+                            <label for="name">Nom complet*</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Sujet*</label>
+                            <select id="subject" name="subject" class="form-control" required>
+                                <option value="">Sélectionnez un sujet</option>
+                                <option value="reservation">Réservation</option>
+                                <option value="information">Demande d'information</option>
+                                <option value="reclamation">Réclamation</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message*</label>
+                            <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="map-container fade-up">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.693028391614!2d-13.701388785727282!3d9.535999193171077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xf1cd8c02a59ea03%3A0x8330fc096f055ecc!2sH%C3%B4tel%20Palm%20Camayenne!5e0!3m2!1sfr!2sfr!4v1647856251859!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="text-center">
+                <p>&copy; 2024 Hôtel Palm Camayenne. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function submitContactForm(event) {
+            event.preventDefault();
+            
+            // Ici vous pouvez ajouter le code pour envoyer le formulaire
+            alert('Votre message a été envoyé avec succès ! Nous vous répondrons dans les plus brefs délais.');
+            document.getElementById('contact-form').reset();
+            
+            return false;
+        }
+
+        // Animation au scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const animateElements = document.querySelectorAll('.fade-up');
+            
+            function isElementInViewport(el) {
+                const rect = el.getBoundingClientRect();
+                return (rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 0.8);
+            }
+            
+            function animateOnScroll() {
+                animateElements.forEach(element => {
+                    if (isElementInViewport(element)) {
+                        const delay = element.getAttribute('data-delay') || 0;
+                        setTimeout(() => {
+                            element.classList.add('visible');
+                        }, delay);
+                    }
+                });
+            }
+            
+            animateOnScroll();
+            window.addEventListener('scroll', animateOnScroll);
+        });
+    </script>
+</body>
+</html>

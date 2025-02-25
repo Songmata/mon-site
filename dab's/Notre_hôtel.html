@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hôtel Palm Camayenne</title>
+    <meta name="description" content="Découvrez l'hôtel Palm Camayenne, un établissement de luxe offrant des chambres élégantes, un spa, une piscine et un restaurant gastronomique.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navBar">
+        <div class="topNav">
+            <div class="logo">
+                <a href="Notre_hôtel.html">Hôtel <span>Palm Camayenne</span></a>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="navItems">
+                <a href="Notre_hôtel.html#chambres">Chambres</a>
+                <a href="Notre_hôtel.html#services">Services</a>
+                <a href="Notre_hôtel.html#galerie">Galerie</a>
+                <a href="Notre_hôtel.html#avis">Avis</a>
+                <a href="Notre_hôtel.html#contact">Contact</a>
+                <a href="Notre_hôtel.html#reservation" class="btn">Réserver</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="welcome" class="welcome">
+        <div class="slideshow">
+            <div class="slideshow-overlay"></div>
+            <img src="images/hotels/hotel-palm-camayenne-galleryhall-1.jpg" alt="Hotel Image 1" class="slideshow-image active">
+            <img src="images/hotels/hotel-palm-camayenne-galleryhall-2.jpg" alt="Hotel Image 2" class="slideshow-image">
+            <img src="images/hotels/hotel-palm-camayenne-galleryhall-3.jpg" alt="Hotel Image 3" class="slideshow-image">
+            <img src="images/hotels/hotel-palm-camayenne-galleryhall-4.jpg" alt="Hotel Image 3" class="slideshow-image">
+            <img src="images/hotels/hotel-palm-camayenne-galleryhall-5.jpg" alt="Hotel Image 3" class="slideshow-image">
+            <img src="images/hotels/hotel-palm-camayenne-galleryhotel-1.jpg" alt="Hotel Image 3" class="slideshow-image">
+            <img src="images/hotels/hotel-palm-camayenne-galleryhotel-2.jpg" alt="Hotel Image 3" class="slideshow-image">
+            <img src="images/hotels/hotel-palm-camayenne-galleryhotel-3.jpg" alt="Hotel Image 3" class="slideshow-image">
+            <img src="images/hotels/hotel-palm-camayenne-galleryhotel-4.jpg" alt="Hotel Image 3" class="slideshow-image">
+            <img src="images/hotels/hotel-palm-camayenne-galleryhotel-5.jpg" alt="Hotel Image 3" class="slideshow-image">
+            <img src="images/hotels/hotel-palm-camayenne-galleryhotel-6.jpg" alt="Hotel Image 3" class="slideshow-image">
+            <img src="images/hotels/hotel-palm-camayenne-galleryhotel-7.jpg" alt="Hotel Image 3" class="slideshow-image">
+            <img src="images/hotels/hotel-palm-camayenne-galleryhotel-8.jpg" alt="Hotel Image 3" class="slideshow-image">
+            <img src="images/hotels/hotel-palm-camayenne-galleryhotel-9.jpg" alt="Hotel Image 3" class="slideshow-image">
+            <img src="images/hotels/hotel-palm-camayenne-galleryhotel-10.jpg" alt="Hotel Image 3" class="slideshow-image">
+            <img src="images/hotels/hotel-palm-camayenne-galleryhotel-111.jpg" alt="Hotel Image 3" class="slideshow-image">
+            <img src="images/hotels/hotel-palm-camayenne-galleryhotel-12.jpg" alt="Hotel Image 3" class="slideshow-image">
+            <img src="images/hotels/hotel-palm-camayenne-galleryhotel-13.jpg" alt="Hotel Image 3" class="slideshow-image">
+            <img src="images/hotels/hotel-palm-camayenne-galleryhall-1.jpg" alt="Hotel Image 4" class="slideshow-image">
+            <img src="images/hotels/hotel-palm-camayenne-galleryhall-2.jpg" alt="Hotel Image 5" class="slideshow-image">
+        </div>
+        <div class="container welcome-content">
+            <h1 class="fade-up">Bienvenue à l'Hôtel Palm Camayenne</h1>
+            <p class="fade-up" data-delay="200">
+                Une expérience unique de luxe et de confort au cœur de Conakry.
+                Découvrez notre établissement 5 étoiles et vivez des moments inoubliables.
+            </p>
+            <a href="#reservation" class="btn fade-up" data-delay="400">Réserver maintenant</a>
+        </div>
+    </section>
+
+    <section id="chambres" class="chambres">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="fade-up">Nos Suites d'Exception</h2>
+                <p class="fade-up">Chaque chambre est unique et pensée pour votre confort absolu</p>
+            </div>
+            <div class="chambres-container">
+                <div class="chambre fade-up">
+                    <img src="images/chambres2.jpg" alt="Suite Familiale">
+                    <div class="chambre-content">
+                        <h3>Suite Familiale</h3>
+                        <p>Espace généreux et confort optimal pour toute la famille</p>
+                        <p class="price">350€ <span>/nuit</span></p>
+                        <a href="#reservation" class="btn">Réserver</a>
+                        <a href="javascript:void(0)" class="btn" style="background: transparent; color: var(--secondary-color); border: 1px solid var(--secondary-color); margin-left: 10px;" onclick="showRoomDetails('Suite Familiale')">Voir détails</a>
+                    </div>
+                </div>
+                <div class="chambre fade-up" data-delay="200">
+                    <img src="images/chambre3.jpg" alt="Suite Panoramique">
+                    <div class="chambre-content">
+                        <h3>Suite Panoramique</h3>
+                        <p>Vue imprenable sur la ville et prestations haut de gamme</p>
+                        <p class="price">490€ <span>/nuit</span></p>
+                        <a href="#reservation" class="btn">Réserver</a>
+                        <a href="javascript:void(0)" class="btn" style="background: transparent; color: var(--secondary-color); border: 1px solid var(--secondary-color); margin-left: 10px;" onclick="showRoomDetails('Suite Panoramique')">Voir détails</a>
+                    </div>
+                </div>
+                <div class="chambre fade-up" data-delay="400">
+                    <img src="images/chambre5.jpg" alt="Suite Présidentielle">
+                    <div class="chambre-content">
+                        <h3>Suite Présidentielle</h3>
+                        <p>Le summum du luxe pour un séjour d'exception</p>
+                        <p class="price">590€ <span>/nuit</span></p>
+                        <a href="#reservation" class="btn">Réserver</a>
+                        <a href="javascript:void(0)" class="btn" style="background: transparent; color: var(--secondary-color); border: 1px solid var(--secondary-color); margin-left: 10px;" onclick="showRoomDetails('Suite Présidentielle')">Voir détails</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services" style="background-color: var(--light-bg);">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="fade-up">Nos Services Premium</h2>
+                <p class="fade-up">Une expérience complète pour un séjour inoubliable</p>
+            </div>
+            <div class="services-container">
+                <div class="service fade-up">
+                    <img src="images/fille_piscine1.jpg" alt="Spa & Bien-être">
+                    <div class="service-content">
+                        <h3>Spa & Bien-être</h3>
+                        <p>Massages, soins du corps et rituels de beauté dans notre espace bien-être</p>
+                        <a href="javascript:void(0)" class="btn" style="margin-top: 15px;" onclick="showServiceDetails('Spa & Bien-être')">Découvrir</a>
+                    </div>
+                </div>
+                <div class="service fade-up" data-delay="200">
+                    <img src="images/riviera-piscine.jpg" alt="Piscine Infinity">
+                    <div class="service-content">
+                        <h3>Piscine Infinity</h3>
+                        <p>Piscine à débordement avec vue panoramique sur l'océan</p>
+                        <a href="javascript:void(0)" class="btn" style="margin-top: 15px;" onclick="showServiceDetails('Piscine Infinity')">Découvrir</a>
+                    </div>
+                </div>
+                <div class="service fade-up" data-delay="400">
+                    <img src="images/restau.jpg" alt="Restaurant Gastronomique">
+                    <div class="service-content">
+                        <h3>Restaurant Gastronomique</h3>
+                        <p>Une cuisine raffinée mêlant saveurs locales et internationales</p>
+                        <a href="javascript:void(0)" class="btn" style="margin-top: 15px;" onclick="showServiceDetails('Restaurant Gastronomique')">Découvrir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galerie" class="galerie">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="fade-up">Galerie Photos</h2>
+                <p class="fade-up">Découvrez notre hôtel à travers ces quelques images</p>
+            </div>
+            
+            <div class="tabs fade-up">
+                <div class="tab active" data-tab="all">Tout voir</div>
+                <div class="tab" data-tab="rooms">Chambres</div>
+                <div class="tab" data-tab="restaurant">Restaurant</div>
+                <div class="tab" data-tab="hotels">Hôtel</div>
+            </div>
+            
+            <div class="tab-content active" id="all">
+                <div class="gallery fade-up">
+                    <!-- Chambres -->
+                    <div class="gallery-item">
+                        <img src="images/chambres2.jpg" alt="Suite Familiale">
+                        <div class="overlay"><h4>Suite Familiale</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/chambre3.jpg" alt="Suite Panoramique">
+                        <div class="overlay"><h4>Suite Panoramique</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/chambre5.jpg" alt="Suite Présidentielle">
+                        <div class="overlay"><h4>Suite Présidentielle</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/chambre/hotel-palm-camayenne-gallerysuperieure-2.jpg" alt="Suite Présidentielle 1">
+                        <div class="overlay"><h4>Suite Présidentielle - Vue 1</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/chambre/hotel-palm-camayenne-gallerysuperieure-1.jpg" alt="Suite Présidentielle 2">
+                        <div class="overlay"><h4>Suite Présidentielle - Vue 2</h4></div>
+                    </div>
+                    <!-- Restaurant -->
+                    <div class="gallery-item">
+                        <img src="images/restaurant/hotel-palm-camayenne-galleryflamboyant-1.jpg" alt="Restaurant principal">
+                        <div class="overlay"><h4>Restaurant Le Palmier</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/restaurant/hotel-palm-camayenne-galleryflamboyant-2.jpg" alt="Terrasse restaurant">
+                        <div class="overlay"><h4>Terrasse panoramique</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/restaurant/hotel-palm-camayenne-galleryflamboyant-3.jpg" alt="Plat signature">
+                        <div class="overlay"><h4>Plat signature</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/restaurant/hotel-palm-camayenne-galleryflamboyant-4.jpg" alt="Dessert">
+                        <div class="overlay"><h4>Création du Chef pâtissier</h4></div>
+                    </div>
+                    <!-- Hôtel -->
+                    <div class="gallery-item">
+                        <img src="images/hotels/hotel-palm-camayenne-galleryhall-1.jpg" alt="Vue Hôtel 1">
+                        <div class="overlay"><h4>Façade Principale</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/hotels/hotel-palm-camayenne-galleryhall-3.jpg" alt="Vue Hôtel 2">
+                        <div class="overlay"><h4>Vue spacieuse</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/hotels/hotel-palm-camayenne-galleryhotel-6.jpg" alt="Vue Hôtel 3">
+                        <div class="overlay"><h4>Espace d'accueil</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/hotels/hotel-palm-camayenne-galleryhotel-1.jpg" alt="Vue Hôtel 4">
+                        <div class="overlay"><h4>Vue Panoramique</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/hotels/hotel-palm-camayenne-galleryhotel-4.jpg" alt="Vue Hôtel 5">
+                        <div class="overlay"><h4>Entrée Principale</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/hotels/hotel-palm-camayenne-galleryhall-2.jpg" alt="Entrée">
+                        <div class="overlay"><h4>Hall d'entrée</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/hotels/hotel-palm-camayenne-galleryhall-3.jpg" alt="Réception">
+                        <div class="overlay"><h4>Réception</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/hotels/hotel-palm-camayenne-galleryhall-4.jpg" alt="Lobby">
+                        <div class="overlay"><h4>Lobby lounge</h4></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="rooms">
+                <div class="gallery fade-up">
+                    <div class="gallery-item">
+                        <img src="images/chambres2.jpg" alt="Suite Familiale">
+                        <div class="overlay">
+                            <h4>Suite Familiale</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/chambre3.jpg" alt="Suite Panoramique">
+                        <div class="overlay">
+                            <h4>Suite Panoramique</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/chambre5.jpg" alt="Suite Présidentielle">
+                        <div class="overlay">
+                            <h4>Suite Présidentielle</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/chambre/hotel-palm-camayenne-gallerysuperieure-2.jpg" alt="Suite Présidentielle 1">
+                        <div class="overlay"><h4>Suite Présidentielle - Vue 1</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/chambre/hotel-palm-camayenne-gallerysuperieure-1.jpg" alt="Suite Présidentielle 2">
+                        <div class="overlay"><h4>Suite Présidentielle - Vue 2</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/chambre//hotel-palm-camayenne-gallerysuite-prestige-1.jpg" alt="Suite Luxe 2">
+                        <div class="overlay"><h4>Suite Luxe - Vue 2</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/chambre/hotel-palm-camayenne-gallerysuite-prestige-2.jpg" alt="Suite Familiale 1">
+                        <div class="overlay"><h4>Suite Familiale - Vue 1</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images//chambre/hotel-palm-camayenne-gallerysuite-prestige-3.jpg" alt="Suite Familiale 2">
+                        <div class="overlay"><h4>Suite Familiale - Vue 2</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/chambre/hotel-palm-camayenne-gallerysuite-prestige-4.jpg" alt="Suite Panoramique 1">
+                        <div class="overlay"><h4>Suite Panoramique - Vue 1</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/chambre/hotel-palm-camayenne-gallerysuite-prestige-5.jpg" alt="Suite Panoramique 2">
+                        <div class="overlay"><h4>Suite Panoramique - Vue 2</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/chambre//hotel-palm-camayenne-gallerysuite-prestige-6.jpg" alt="Suite Executive">
+                        <div class="overlay"><h4>Suite Executive</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/chambre/hotel-palm-camayenne-gallerysuite-presidentielle-2.jpg" alt="Suite Deluxe">
+                        <div class="overlay"><h4>Suite Deluxe</h4></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="restaurant">
+                <div class="gallery fade-up">
+                    <div class="gallery-item">
+                        <img src="images/restau.jpg" alt="Restaurant Gastronomique">
+                        <div class="overlay">
+                            <h4>Restaurant Gastronomique</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/restaurant/hotel-palm-camayenne-galleryflamboyant-1.jpg" alt="Restaurant principal">
+                        <div class="overlay"><h4>Restaurant Le Palmier</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/restaurant/hotel-palm-camayenne-galleryflamboyant-2.jpg" alt="Terrasse restaurant">
+                        <div class="overlay"><h4>Terrasse panoramique</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/restaurant/hotel-palm-camayenne-galleryflamboyant-3.jpg" alt="Plat signature">
+                        <div class="overlay"><h4>Plat signature</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/restaurant/hotel-palm-camayenne-galleryflamboyant-4.jpg" alt="Dessert">
+                        <div class="overlay"><h4>Création du Chef pâtissier</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/restaurant/hotel-palm-camayenne-galleryflamboyant-5.jpg" alt="Bar lounge">
+                        <div class="overlay"><h4>Bar Le Sunset</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/restaurant/hotel-palm-camayenne-galleryflamboyant-6.jpg" alt="Bar piscine">
+                        <div class="overlay"><h4>Bar de la piscine</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/restaurant/hotel-palm-camayenne-galleryflamboyant-7.jpg" alt="Petit-déjeuner">
+                        <div class="overlay"><h4>Buffet petit-déjeuner</h4></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="hotels">
+                <div class="gallery fade-up">
+                    <div class="gallery-item">
+                        <img src="images/hotels/hotel-palm-camayenne-galleryhall-1.jpg" alt="Vue Hôtel 1">
+                        <div class="overlay">
+                            <h4>Façade Principale</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/hotels/hotel-palm-camayenne-galleryhall-3.jpg" alt="Vue Hôtel 2">
+                        <div class="overlay">
+                            <h4>Vue espacieux</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/hotels/hotel-palm-camayenne-galleryhotel-6.jpg" alt="Vue Hôtel 3">
+                        <div class="overlay">
+                            <h4>Espace d'accueil</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/hotels/hotel-palm-camayenne-galleryhotel-1.jpg" alt="Vue Hôtel 4">
+                        <div class="overlay">
+                            <h4>Vue Panoramique</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/hotels/hotel-palm-camayenne-galleryhotel-4.jpg" alt="Vue Hôtel 5">
+                        <div class="overlay">
+                            <h4>Entrée Principale</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/hotels/hotel-palm-camayenne-galleryhall-2.jpg" alt="Entrée">
+                        <div class="overlay"><h4>Hall d'entrée</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/hotels/hotel-palm-camayenne-galleryhall-3.jpg" alt="Réception">
+                        <div class="overlay"><h4>Réception</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/hotels/hotel-palm-camayenne-galleryhall-4.jpg" alt="Lobby">
+                        <div class="overlay"><h4>Lobby lounge</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/hotels/hotel-palm-camayenne-galleryhall-5.jpg" alt="Jardins">
+                        <div class="overlay"><h4>Jardins tropicaux</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/hotels/hotel-palm-camayenne-galleryhotel-1.jpg" alt="Vue aérienne">
+                        <div class="overlay"><h4>Vue aérienne</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/hotels/hotel-palm-camayenne-galleryhotel-2.jpg" alt="Plage">
+                        <div class="overlay"><h4>Plage privée</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/hotels/hotel-palm-camayenne-galleryhotel-3.jpg" alt="Vue nuit">
+                        <div class="overlay"><h4>Vue de nuit</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/hotels/hotel-palm-camayenne-galleryhotel-4.jpg" alt="Extérieur">
+                        <div class="overlay"><h4>Vue extérieure</h4></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/hotels/hotel-palm-camayenne-galleryhotel-5.jpg" alt="Sunset">
+                        <div class="overlay"><h4>Coucher de soleil</h4></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="search-availability-section" class="search-availability-section">
+        <div class="search-availability fade-up" data-delay="600">
+            <h3>Vérifier les disponibilités</h3>
+            <form class="search-form">
+                <div class="form-group">
+                    <label for="check-in">Arrivée</label>
+                    <input type="date" id="check-in" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="check-out">Départ</label>
+                    <input type="date" id="check-out" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Nombre de personnes</label>
+                    <select id="guests" class="form-control">
+                        <option value="1">1 personne</option>
+                        <option value="2" selected>2 personnes</option>
+                        <option value="3">3 personnes</option>
+                        <option value="4">4 personnes</option>
+                        <option value="5">5+ personnes</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>&nbsp;</label>
+                    <button type="button" class="btn form-control" onclick="showAvailability()">Rechercher</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="fade-up">Réservez votre séjour</h2>
+                <p class="fade-up">Profitez de nos offres spéciales en réservant directement sur notre site</p>
+            </div>
+            
+            <div class="reservation-form fade-up">
+                <form id="booking-form">
+                    <div class="search-form">
+                        <div class="form-group">
+                            <label for="arrival">Date d'arrivée*</label>
+                            <input type="date" id="arrival" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="departure">Date de départ*</label>
+                            <input type="date" id="departure" class="form-control" required>
+                        </div>
+                    </div>
+                    
+                    <div class="search-form">
+                        <div class="form-group">
+                            <label for="room-type">Type de chambre*</label>
+                            <select id="room-type" class="form-control" onchange="updateTotal()">
+                                <option value="">Sélectionnez une chambre</option>
+                                <option value="Suite Familiale" data-price="350">Suite Familiale - 350€/nuit</option>
+                                <option value="Suite Panoramique" data-price="490">Suite Panoramique - 490€/nuit</option>
+                                <option value="Suite Présidentielle" data-price="590">Suite Présidentielle - 590€/nuit</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="nb-guests">Nombre de personnes*</label>
+                            <select id="nb-guests" class="form-control">
+                                <option value="1">1 personne</option>
+                                <option value="2" selected>2 personnes</option>
+                                <option value="3">3 personnes</option>
+                                <option value="4">4 personnes</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <h3 style="margin-top: 2rem;">Options supplémentaires</h3>
+                    
+                    <div class="search-form">
+                        <div class="form-group">
+                            <label>Options de petit-déjeuner</label>
+                            <div class="options-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="breakfast" onchange="updateTotal()"> 
+                                    Petit-déjeuner buffet (25€/personne/jour)
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Services de stationnement</label>
+                            <div class="options-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="parking" onchange="updateTotal()"> 
+                                    Parking sécurisé (20€/jour)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="total-section" style="margin-top: 2rem; padding: 1rem; background: var(--light-bg); border-radius: 8px;">
+                        <h3>Résumé de la réservation</h3>
+                        <div id="booking-summary">
+                            <p>Sélectionnez vos dates et options pour voir le total</p>
+                        </div>
+                        <div class="total-price">
+                            <h4>Total estimé: <span id="total-amount">0</span>€</h4>
+                        </div>
+                    </div>
+                    
+                    <h3 style="margin-top: 2rem;">Vos coordonnées</h3>
+                    
+                    <div class="search-form">
+                        <div class="form-group">
+                            <label for="name">Nom complet</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                    </div>
+                    
+                    <div class="search-form">
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="special-requests">Demandes spéciales</label>
+                            <textarea id="special-requests" class="form-control" rows="3"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group" style="text-align: center; margin-top: 2rem;">
+                        <button type="button" class="btn" onclick="submitReservation()">Confirmer la réservation</button>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="faq fade-up">
+                <h3>Questions fréquentes</h3>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Quelle est l'heure d'arrivée et de départ ?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>L'heure d'arrivée (check-in) est à partir de 14h00 et l'heure de départ (check-out) est jusqu'à 12h00. Un check-out tardif est possible selon disponibilité et peut entraîner des frais supplémentaires.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Le petit-déjeuner est-il inclus ?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, toutes nos offres incluent un petit-déjeuner buffet complet. Le petit-déjeuner est servi de 6h30 à 10h30 au restaurant de l'hôtel.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Le petit-déjeuner est-il inclus ?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, toutes nos offres incluent un petit-déjeuner buffet complet. Le petit-déjeuner est servi de 6h30 à 10h30 au restaurant de l'hôtel.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Proposez-vous un service de navette aéroport ?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, nous proposons un service de navette depuis et vers l'aéroport sur demande. Ce service est disponible 24h/24 et doit être réservé au moins 24 heures à l'avance. Des frais supplémentaires peuvent s'appliquer selon la distance.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>L'hôtel dispose-t-il d'une connexion Wi-Fi ?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, une connexion Wi-Fi gratuite est disponible dans tout l'établissement, y compris dans les chambres et les espaces communs.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Les animaux sont-ils acceptés ?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Les petits animaux de compagnie sont acceptés dans certaines chambres, sous conditions. Veuillez nous contacter avant votre réservation pour plus d'informations. Des frais supplémentaires peuvent s'appliquer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="avis" class="reviews-section">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="fade-up">Avis de nos clients</h2>
+            <p class="fade-up">Découvrez ce que pensent nos clients de leur séjour</p>
+        </div>
+
+        <div class="reviews-container">
+            <div class="review-card fade-up">
+                <div class="review-header">
+                    <img src="images/dabo.jpg" alt="Avatar" class="reviewer-avatar">
+                    <div class="reviewer-info">
+                        <div class="reviewer-name">Dabo Edaly</div>
+                        <div class="review-date">Séjour en Mars 2024</div>
+                    </div>
+                </div>
+                <div class="star-rating">★★★★★</div>
+                <p class="review-text">"Un séjour extraordinaire ! La Suite Panoramique offre une vue à couper le souffle. Le service est impeccable et le petit-déjeuner est délicieux."</p>
+            </div>
+
+            <div class="review-card fade-up" data-delay="200">
+                <div class="review-header">
+                    <img src="images/avatar2.jpg" alt="Avatar" class="reviewer-avatar">
+                    <div class="reviewer-info">
+                        <div class="reviewer-name">Bah Adama</div>
+                        <div class="review-date">Séjour en Février 2024</div>
+                    </div>
+                </div>
+                <div class="star-rating">★★★★★</div>
+                <p class="review-text">"Le spa est un véritable havre de paix. Les thérapeutes sont très professionnels. Une expérience relaxante inoubliable."</p>
+            </div>
+
+            <div class="review-card fade-up" data-delay="400">
+                <div class="review-header">
+                    <img src="images/avatar3.jpg" alt="Avatar" class="reviewer-avatar">
+                    <div class="reviewer-info">
+                        <div class="reviewer-name">Bah Ramatoulaye</div>
+                        <div class="review-date">Séjour en Janvier 2024</div>
+                    </div>
+                </div>
+                <div class="star-rating">★★★★☆</div>
+                <p class="review-text">"Restaurant gastronomique excellent, service attentionné. La piscine infinity est magnifique au coucher du soleil."</p>
+            </div>
+        </div>
+
+        <div class="review-form fade-up">
+            <h3>Partagez votre expérience</h3>
+            <form id="review-form">
+                <div class="form-group">
+                    <label>Votre note</label>
+                    <div class="rating-input" id="rating-stars">
+                        <label onclick="setRating(1)">★</label>
+                        <label onclick="setRating(2)">★</label>
+                        <label onclick="setRating(3)">★</label>
+                        <label onclick="setRating(4)">★</label>
+                        <label onclick="setRating(5)">★</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="review-text">Votre commentaire</label>
+                    <textarea id="review-text" class="form-control" rows="4" required></textarea>
+                </div>
+                <button type="button" class="btn" onclick="submitReview()">Publier votre avis</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <section id="contact" class="contact">
+        <div class="container text-center">
+            <h2 class="fade-up">Contactez-nous</h2>
+            <p class="fade-up">Notre équipe est à votre disposition 24h/24, 7j/7</p>
+            <a href="contact.html" class="btn fade-up">Nous contacter</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="text-center">
+                <p>&copy; 2024 Hôtel Palm Camayenne. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="roomDetailsModal" class="modal">
+        <span class="close-modal" onclick="closeModal('roomDetailsModal')">&times;</span>
+        <div class="modal-content">
+            <div class="modal-body">
+                <h2 id="room-name">Nom de la chambre</h2>
+                
+                <div class="room-details">
+                    <div class="room-details-image">
+                        <img id="room-image" src="" alt="Détails chambre">
+                    </div>
+                    <div class="room-details-content">
+                        <div>
+                            <h3>Description</h3>
+                            <p id="room-description"></p>
+                            
+                            <h4 style="margin-top: 1rem;">Équipements</h4>
+                            <div class="room-facilities" id="room-facilities">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <p class="price" id="room-price"></p>
+                            <a href="#reservation" class="btn" onclick="closeModal('roomDetailsModal')">Réserver maintenant</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="serviceDetailsModal" class="modal">
+        <span class="close-modal" onclick="closeModal('serviceDetailsModal')">&times;</span>
+        <div class="modal-content">
+            <div class="modal-body">
+                <h2 id="service-name">Nom du service</h2>
+                
+                <div class="room-details">
+                    <div class="room-details-image">
+                        <img id="service-image" src="" alt="Détails service">
+                    </div>
+                    <div class="room-details-content">
+                        <div>
+                            <h3>Description</h3>
+                            <p id="service-description"></p>
+                            
+                            <h4 style="margin-top: 1rem;">Horaires</h4>
+                            <p id="service-hours"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="availabilityModal" class="modal">
+        <span class="close-modal" onclick="closeModal('availabilityModal')">&times;</span>
+        <div class="modal-content">
+            <div class="modal-body">
+                <h2>Chambres disponibles</h2>
+                <p id="search-dates">Du <span id="from-date"></span> au <span id="to-date"></span> pour <span id="guests-count"></span></p>
+                
+                <div class="availability-results">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
